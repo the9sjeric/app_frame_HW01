@@ -12,7 +12,6 @@ class MainPage(BasePage):
     def goto_blacklist(self):
         # 手动制造黑名单页面
         self.driver.find_element(By.XPATH, '//*[contains(@resource-id,"action_message")]').click()
-        # self.driver.find_element(MobileBy.XPATH, '//*[contains(@resource-id,"action_back")]').click()
         return self
 
     def goto_workspace(self):
